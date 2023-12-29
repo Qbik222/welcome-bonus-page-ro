@@ -1,0 +1,172 @@
+
+@media screen and (max-width: 1700px)
+
+  .banner
+    padding: 0 80px
+    &__column
+      transform: scale(1.2)
+@media screen and (max-width: 1368px)
+
+  .banner
+    padding: 0 60px
+    &__column
+      transform: scale(1)
+@media screen and (max-width: 1220px)
+
+  .banner
+    &__column
+      transform: scale(.8)
+      bottom: 40px
+@media screen and (max-width: 1260px)
+
+  .banner
+    padding: 0 20px
+    &__column
+      transform: scale(.9)
+@media screen and (max-width: 1060px)
+
+  .banner
+    padding: 0 20px
+    &__column
+      transform: scale(.7)
+      transform-origin: left
+    &__column:nth-child(2)
+      transform-origin: right
+
+@media screen and (max-width: 850px)
+
+  .banner
+    &__column
+      transform: scale(.6)
+      &-item
+        gap: 10px
+        width: 330px
+
+@media screen and (max-width: 690px)
+
+  .banner
+    justify-content: space-around
+    &__column
+      transform: scale(.55)
+
+@media screen and (max-width: 650px)
+  .banner
+    justify-content: space-between
+    padding: 0
+    &__column
+      transform-origin: left
+      position: relative
+      right: -1vw
+      top: 0
+    &__column:nth-child(2)
+      transform-origin: right
+      position: relative
+      left: -5vw
+
+@media screen and (max-width: 630px)
+  .banner
+    &__column
+      transform: scale(.5)
+    &__column:nth-child(1)
+      padding-left: 20px
+    &__column:nth-child(2)
+      padding-right: 20px
+      left: -16vw
+
+@media screen and (max-width: 600px)
+
+  .banner
+    &__column:nth-child(2)
+      left: -21vw
+@media screen and (max-width: 580px)
+
+  .banner
+    &__column:nth-child(2)
+      left: -25vw
+      padding-right: 0
+@media screen and (max-width: 550px)
+  .banner
+    background: url("../img/banner-bg-mob.png") no-repeat 0 0/contain
+    flex-direction: column
+    padding: 0
+    justify-content: space-between
+    height: 89vw
+    margin-bottom: 95px
+    &__column:nth-child(1)
+      flex-direction: row-reverse
+      right: 0
+      top: 0
+      padding: 0
+    &__column:nth-child(2)
+      left: 0
+      bottom: 0
+      padding: 0
+    &__column
+      transform: scale(1)
+      display: flex
+      &-item
+        width: 50vw
+        padding: 8px 25px 8px 20px
+        height: 50px
+        span:nth-child(1)
+          font-size: 36px
+          line-height: 36px
+        span:nth-child(2)
+          font-size: 12px
+          line-height: 13px
+          left: 0
+          position: relative
+          bottom: 1px
+        .column-item--left::after
+          border-radius: 2px
+          font-size: 7px
+          line-height: 7px
+          bottom: -2px
+          left: 2px
+        .column-item--right::after
+          bottom: -8px
+          font-size: 7px
+          line-height: 7px
+        &::before
+          width: 26px
+          height: 20px
+          top: 50%
+      &-text
+        margin-top: 0
+        background: $blue
+        color: $magenta
+        width: 50vw
+        font-size: 14px
+        line-height: 14px
+        padding-top: 20px
+        text-align: center
+
+@media screen and (max-width: 420px)
+  .banner
+    &__column
+      &-item
+        padding: 8px 6px 6px 15px
+        gap: 10px
+@media screen and (max-width: 390px)
+  .banner
+    &__column
+      &-item
+        padding: 8px 6px 6px 10px
+        gap: 10px
+        &::before
+          width: 15px
+          height: 13px
+
+@media screen and (max-width: 337px)
+  .banner
+    &__column
+      &-item
+        padding: 8px 3px 8px 6px
+        gap: 5px
+        .banner__column-plus
+          transform: scale(.5)
+          top: 17px
+      &-text
+        padding-top: 12px
+        padding-left: 10px
+        text-align: left

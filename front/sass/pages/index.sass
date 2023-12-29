@@ -1,0 +1,148 @@
+$blue: #000055
+$dark-blue: #000034
+$magenta: #ff267e
+$grey: #EDEDED
+
+$font-suisseintl-reg: SuisseIntl-Regular, sans-serif
+$font-suisseintl-med: SuisseIntl-Medium, sans-serif
+$font-suisseintl-semi: SuisseIntl-Medium, sans-serif
+
+body
+  overscroll-behavior: none
+  overflow: hidden
+  img
+    max-width: 100%
+    height: auto
+
+.banner
+  position: relative
+  width: 100vw
+  height: 33vw
+  padding: 0 120px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background: url("../img/banner-bg.png") no-repeat 50% 0/cover
+  margin-bottom: 80px
+  &__column
+    transform: scale(1.5)
+    transform-origin: center
+    &-item
+      background: $magenta
+      position: relative
+      display: flex
+      width: 315px
+      height: 75px
+      align-items: center
+      gap: 20px
+      padding: 10px 0px 8px 20px
+      .column-item--right::after
+        content: "5274,15 kn "
+        position: absolute
+        z-index: 1
+        background: $magenta
+        border: 1px solid $blue
+        border-radius: 3px
+        font-size: 9px
+        padding: 2px 1px 0px 1px
+        transform: rotateZ(357deg)
+        bottom: -9px
+        left: 0
+        line-height: 9px
+      .column-item--left::after
+        content: "226,04 kn"
+        position: absolute
+        z-index: 1
+        background: $magenta
+        border: 1px solid $blue
+        border-radius: 3px
+        font-size: 9px
+        padding: 2px 1px 0px 1px
+        transform: rotate(357deg)
+        bottom: 12px
+        left: 15px
+        line-height: 9px
+      span
+        font-family: $font-suisseintl-med
+        color: $blue
+        text-transform: uppercase
+      span:nth-child(1)
+        font-size: 60px
+        position: relative
+      span:nth-child(2)
+        font-size: 21px
+        line-height: 24px
+        position: relative
+        bottom: 1px
+    &-text
+      color: $grey
+      font-family: $font-suisseintl-med
+      font-size: 26px
+      text-transform: uppercase
+      margin-top: 15px
+      text-align: center
+    &-item--blue
+      background: $blue
+      &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        transform: translate(-50%, -50%)
+        width: 36px
+        height: 30px
+        background: url("../img/plus.png") no-repeat 0 0/contain
+      span
+        color: $magenta
+      span:nth-child(2)
+        position: relative
+        left: 20px
+
+  .banner__marquee-wrap
+    max-width: 100%
+    overflow: hidden
+    position: absolute
+    bottom: 0
+    left: 0
+    transform: translate(0, 100%)
+    .banner__marquee
+      padding: 14px 0 14px 40px
+      background: $magenta
+      min-width: 100%
+
+      z-index: 4
+      display: flex
+      align-items: center
+      &-list
+        margin: 0 24px 0 0
+        display: flex
+        align-items: center
+
+      &-item
+        position: relative
+        font-family: $font-suisseintl-semi
+        font-size: 20px
+        line-height: 26px
+        text-align: center
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        font-feature-settings: 'pnum' on, 'lnum' on
+        color: $grey
+        white-space: nowrap
+        span
+          position: absolute
+          right: -8px
+          bottom: 4px
+          font-size: 11px
+        &:not(:last-child)
+          margin: 0 20px 0 0
+        &:nth-child(2)
+          min-width: 40px
+          img
+            margin-top: 7px
+      &-fav
+        margin: 0 18px 0 0
+        min-width: 40px
+        height: 30px
+        background: url("../img/fav.svg") no-repeat 50% 0/contain
+
