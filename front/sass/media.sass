@@ -1,172 +1,220 @@
+@media screen and (max-width: 1300px)
+  .bonus__page
+    .banner
+      &__text
+        max-width: 45vw
 
-@media screen and (max-width: 1700px)
+@media screen and (max-width: 1200px)
+  .bonus__page
+    .info
+      flex-wrap: wrap
+      &__item
+        flex: 0 0 100%
+        padding: 40px 10px 55px 40px
+        &-title
+          max-width: 640px
+        &-desc
+          min-height: 70px
+          max-width: 570px
+          br
+            display: block
 
-  .banner
-    padding: 0 80px
-    &__column
-      transform: scale(1.2)
-@media screen and (max-width: 1368px)
+@media screen and (max-width: 1024px)
+  .bonus__page
+    .banner
+      &__marquee-wrap
+        width: 100vw
+        height: 80px
+        .banner__marquee
+          width: 100vw
+          height: 100%
+          padding: 0
+          &-list
+            margin: 0 auto
+            &:nth-child(2), &:nth-child(3)
+              display: none
+            .banner__marquee-item
+              font-size: 18px
+              line-height: 24px
+              text-align: center
+            .banner__marquee-fav
+              &:nth-child(7)
+                margin: 0
+    .rules
+      padding: 50px 40px
+      &__wrap
+        .rules__list-item, .rules__list-title
+          font-size: 14px
+          line-height: 24px
+        .table-container
+          .table
+            &__row
+              &-item
+                font-size: 14px
+                line-height: 22px
 
-  .banner
-    padding: 0 60px
-    &__column
-      transform: scale(1)
-@media screen and (max-width: 1220px)
+@media screen and (max-width: 768px)
+  .bonus__page
+    .banner
+      &__marquee-wrap
+        .banner__marquee
+          &-list
+            .banner__marquee-item
+              white-space: normal
+              &:nth-child(3), &:nth-child(5)
+                width: 41px
+                height: 34px
+              &:not(:last-child)
+                margin: 0 15px 0 0
+      &__text
+        left: 20px
 
-  .banner
-    &__column
-      transform: scale(.8)
-      bottom: 40px
-@media screen and (max-width: 1260px)
+@media screen and (max-width: 720px)
+  .bonus__page
+    .banner
+     &__marquee-wrap
+        .banner__marquee
+          padding: 0 20px
+          &-list
+            display: flex
+            width: 100%
+            align-items: center
+            justify-content: space-around
+            .banner__marquee-item
+              font-size: 14px
+              &:nth-child(2)
+                max-width: 70px
+                text-align: left
+              &:nth-child(4)
+                max-width: 95px
+                text-align: center
+                br
+                  display: none
+              &:nth-child(6)
+                width: 80px
+                text-align: right
+    .info
+      &__item
+        &-title
+          max-width: 600px
+        &-desc
+          max-width: 500px
+          br
+            display: none
+    .rules
+      .table-container
+        .table
+          &__row
+            &-item
+              order: 10
+              &:nth-child(1)
+                flex: 0 0 50%
+                order: 1
+                opacity: .65
+              &:nth-child(2)
+                flex: 0 0 50%
+                order: 2
+                opacity: .65
+              &:nth-child(3)
+                flex: 0 0 100%
+                order: 5
+                opacity: .65
+              &:nth-child(4)
+                flex: 0 0 100%
+                order: 7
+                opacity: .65
+              &:nth-child(5)
+                order: 3
+                flex: 0 0 50%
+                padding-top: 0
+              &:nth-child(6)
+                order: 4
+                flex: 0 0 50%
+                padding-top: 0
+              &:nth-child(7)
+                flex: 0 0 100%
+                order: 6
+                padding-top: 0
+              &:nth-child(8)
+                flex: 0 0 100%
+                order: 8
+                padding-top: 0
 
-  .banner
-    padding: 0 20px
-    &__column
-      transform: scale(.9)
-@media screen and (max-width: 1060px)
-
-  .banner
-    padding: 0 20px
-    &__column
-      transform: scale(.7)
-      transform-origin: left
-    &__column:nth-child(2)
-      transform-origin: right
-
-@media screen and (max-width: 850px)
-
-  .banner
-    &__column
-      transform: scale(.6)
-      &-item
-        gap: 10px
-        width: 330px
-
-@media screen and (max-width: 690px)
-
-  .banner
-    justify-content: space-around
-    &__column
-      transform: scale(.55)
-
-@media screen and (max-width: 650px)
-  .banner
-    justify-content: space-between
-    padding: 0
-    &__column
-      transform-origin: left
-      position: relative
-      right: -1vw
-      top: 0
-    &__column:nth-child(2)
-      transform-origin: right
-      position: relative
-      left: -5vw
-
-@media screen and (max-width: 630px)
-  .banner
-    &__column
-      transform: scale(.5)
-    &__column:nth-child(1)
-      padding-left: 20px
-    &__column:nth-child(2)
-      padding-right: 20px
-      left: -16vw
 
 @media screen and (max-width: 600px)
+  .bonus__page
+    .banner
+      height: 105vw
+      &__text
+        max-width: 80vw
+        top: 0
+        left: 0
+        transform: translate(0, 0)
+      &__marquee-wrap
+        .banner__marquee
+          height: 80px
+          padding: 0 0 0 15px
+          &-fav
+            display: none
+          &-list
+            .banner__marquee-item
+              font-size: 14px
+              line-height: 18px
+              width: 90px
+              white-space: normal
+              &:not(:last-child)
+                margin: 0 10px 0 0
+              &:nth-child(3), &:nth-child(5)
+                width: 26px
+                height: 21px
+                min-width: auto
+            .banner__marquee-fav
+              display: none
+    .info
+      &__item
+        padding: 30px 16px 40px 16px
+        &-title, &-desc
+          max-width: 300px
+        &-title
+          font-size: 32px
+        &-desc
+          font-size: 16px
+        &-btn
+          width: 100%
+          height: 56px
+        &-link
+          top: 37px
+    .rules
+      padding: 20px 0
+      &__wrap
+        .rules__btn
+          border-radius: 0
+          font-size: 14px
+          height: 60px
+          &::before
+            width: 16px
+            height: 8px
+        .rules__list
+          margin-top: 2px
+          &-item, &-title
+            font-size: 12px
+            .sub-list
+              padding-left: 30px
+          &-tableTitle
+            font-size: 16px
+@media screen and (max-width: 360px)
+  .bonus__page
+    .banner
+      .banner__marquee-wrap
+        .banner__marquee
+          &-list
+            .banner__marquee-item
+              font-size: 11px
+    .info
+      &__item
+        &-title
+          font-size: 30px
+          max-width: 260px
 
-  .banner
-    &__column:nth-child(2)
-      left: -21vw
-@media screen and (max-width: 580px)
 
-  .banner
-    &__column:nth-child(2)
-      left: -25vw
-      padding-right: 0
-@media screen and (max-width: 550px)
-  .banner
-    background: url("../img/banner-bg-mob.png") no-repeat 0 0/contain
-    flex-direction: column
-    padding: 0
-    justify-content: space-between
-    height: 89vw
-    margin-bottom: 95px
-    &__column:nth-child(1)
-      flex-direction: row-reverse
-      right: 0
-      top: 0
-      padding: 0
-    &__column:nth-child(2)
-      left: 0
-      bottom: 0
-      padding: 0
-    &__column
-      transform: scale(1)
-      display: flex
-      &-item
-        width: 50vw
-        padding: 8px 25px 8px 20px
-        height: 50px
-        span:nth-child(1)
-          font-size: 36px
-          line-height: 36px
-        span:nth-child(2)
-          font-size: 12px
-          line-height: 13px
-          left: 0
-          position: relative
-          bottom: 1px
-        .column-item--left::after
-          border-radius: 2px
-          font-size: 7px
-          line-height: 7px
-          bottom: -2px
-          left: 2px
-        .column-item--right::after
-          bottom: -8px
-          font-size: 7px
-          line-height: 7px
-        &::before
-          width: 26px
-          height: 20px
-          top: 50%
-      &-text
-        margin-top: 0
-        background: $blue
-        color: $magenta
-        width: 50vw
-        font-size: 14px
-        line-height: 14px
-        padding-top: 20px
-        text-align: center
 
-@media screen and (max-width: 420px)
-  .banner
-    &__column
-      &-item
-        padding: 8px 6px 6px 15px
-        gap: 10px
-@media screen and (max-width: 390px)
-  .banner
-    &__column
-      &-item
-        padding: 8px 6px 6px 10px
-        gap: 10px
-        &::before
-          width: 15px
-          height: 13px
-
-@media screen and (max-width: 337px)
-  .banner
-    &__column
-      &-item
-        padding: 8px 3px 8px 6px
-        gap: 5px
-        .banner__column-plus
-          transform: scale(.5)
-          top: 17px
-      &-text
-        padding-top: 12px
-        padding-left: 10px
-        text-align: left
