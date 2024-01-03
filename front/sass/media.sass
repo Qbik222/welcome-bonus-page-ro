@@ -1,11 +1,29 @@
+@media screen and (min-width: 2300px)
+  .bonus__page
+    .banner
+      &__marquee-wrap
+        .banner__marquee
+          &-list
+             font-size: 24px
+             &:nth-child(4)
+               display: flex
+
 @media screen and (max-width: 1300px)
   .bonus__page
     .banner
       &__text
         max-width: 45vw
+        &-item
+          font-size: 58px
+          line-height: 73px
 
 @media screen and (max-width: 1200px)
   .bonus__page
+    .banner
+      &__text
+        left: 55px
+        max-width: 51vw
+
     .info
       flex-wrap: wrap
       &__item
@@ -22,6 +40,10 @@
 @media screen and (max-width: 1024px)
   .bonus__page
     .banner
+      &__text
+        &-item
+          font-size: 44px
+          line-height: 56px
       &__marquee-wrap
         width: 100vw
         height: 80px
@@ -53,9 +75,21 @@
                 font-size: 14px
                 line-height: 22px
 
+@media screen and (max-width: 850px)
+  .bonus__page
+    .banner
+      &__text
+        &-item
+          font-size: 40px
+          line-height: 50px
+
 @media screen and (max-width: 768px)
   .bonus__page
     .banner
+      &__text
+        &-item
+          font-size: 38px
+          line-height: 48px
       &__marquee-wrap
         .banner__marquee
           &-list
@@ -72,7 +106,12 @@
 @media screen and (max-width: 720px)
   .bonus__page
     .banner
-     &__marquee-wrap
+      &__text
+        &-item
+          font-size: 33px
+          line-height: 43px
+          padding: 0 10px
+      &__marquee-wrap
         .banner__marquee
           padding: 0 20px
           &-list
@@ -190,11 +229,14 @@
           border-radius: 0
           font-size: 14px
           height: 60px
+          &::before, &::after
+            width: 2px
+            height: 10px
           &::before
-            width: 16px
-            height: 8px
-        .rules__list
-          margin-top: 2px
+            right: 42px
+        .rules__list-wrap
+          .rules__list
+            margin-top: 2px
           &-item, &-title
             font-size: 12px
             .sub-list
@@ -202,9 +244,14 @@
           &-tableTitle
             font-size: 16px
 
-@media screen and (max-width: 360px)
+@media screen and (max-width: 365px)
   .bonus__page
     .banner
+      &__text
+        &-item
+          font-size: 28px
+          line-height: 35px
+          padding: 0 7px
       .banner__marquee-wrap
         .banner__marquee
           &-list
