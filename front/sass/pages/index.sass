@@ -32,19 +32,26 @@ body
         background: url("../img/banner-bg.jpg") no-repeat 50% 0/cover
     &__text
       position: absolute
+      display: flex
+      flex-direction: column
       left: 65px
       top: 50%
       transform: translateY(-50%)
       color: $blue
       &-item
+        display: flex
+        align-items: center
+        justify-content: space-between
         font-family: $font-suisseintl-med
         font-size: 66px
-        line-height: 80px
         text-transform: uppercase
         background: $magenta
-        padding: 0 20px
+        padding: 0px 20px
+        max-height: 3.5em
         &:nth-child(1)
-          display: inline
+          max-width: 50%
+          position: relative
+          top: 1px
         span
           font-family: $font-wulkan-semi-italic
     &__marquee-wrap
