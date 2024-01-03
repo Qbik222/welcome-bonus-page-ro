@@ -53,9 +53,12 @@ body
           position: relative
           top: 1px
         span
-          font-family: $font-wulkan-semi-italic
-          position: relative
-          left: 0.14em
+          &:nth-child(1)
+            font-family: $font-suisseintl-med
+          &:nth-child(2)
+            font-family: $font-wulkan-semi-italic
+            position: relative
+            left: 0.14em
     &__marquee-wrap
       max-width: 100%
       overflow: hidden
