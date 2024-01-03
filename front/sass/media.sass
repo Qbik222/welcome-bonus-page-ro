@@ -256,9 +256,20 @@
         .banner__marquee
           &-list
             .banner__marquee-item
-              font-size: 11px
+              font-size: 12px
     .info
       &__item
         &-title
           font-size: 30px
           max-width: 260px
+
+@media screen and (max-width: 335px)
+  .bonus__page
+    .banner
+      .banner__marquee-wrap
+        .banner__marquee
+          &-list
+            .banner__marquee-item
+              font-size: 11px
+              &:nth-child(2)
+                max-width: 60px
